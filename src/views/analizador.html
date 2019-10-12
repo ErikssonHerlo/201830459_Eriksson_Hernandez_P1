@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Analizador Lexico</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+        <header >
+		
+                <a>
+                <span class="site-name">Analizador Lexico</span>
+                    
+                    <span class="site-desc">Lenguajes formales y de programacion.</span>
+                </a> 
+         
+            </header>
+            
+    <form name="myForm">
+        <input class="ingresar" type="file" id="myInput" />
+        <div class="analizador"> 
+            <div class="hijo">
+    <table width="400" cellspacing="1" cellpadding="3" border="0" bgcolor="#1E679A"> 
+        <tr> 
+           <td><font color="#FFFFFF" face="arial, verdana, helvetica"> 
+        <b>Contenido del archivo:</b> 
+           </font></td> 
+        </tr> 
+        <tr> 
+           <td bgcolor="#dfe1ed"> 
+           <font face="arial, verdana, helvetica"> 
+            <pre id="contenido-archivo"></pre>
+           </font> 
+           </td> 
+        </tr> 
+        </table> 
+    </div>
+</div>
+    
+    </form>
+    <article class="contenedor">
+        <h3>Palabras</h3>
+            <ul>
+                <div class="historial" id="historial">
+                
+                </div>
+            </ul>
+        </article>
+        <div class="auto">
+            <h1>Automata</h1>
+            <img src="./img/automata1.jpg">
+        </div>
+
+    <script type="text/javascript" src="./analizador.js"></script>
+    <script type="text/javascript" src="./leer.js"></script>
+    <script type="text/javascript" src="./archivo.js"></script>
+</body>
+</html>

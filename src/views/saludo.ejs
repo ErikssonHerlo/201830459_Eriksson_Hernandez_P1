@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <% include bloque/head.html%>
+</head>
+
+<body>
+    <% include bloque/nav.html%>
+
+
+        <button class="button " id="getButton">Get Data</button>
+        <button class="button " id="postButton">Post Data</button>
+
+
+        <h1>
+            <div >Analizador Lexico </div>
+        </h1>
+        <p>Bienvenido</p>
+
+        <label id="label1">Ingrese un archivo de texto</label>
+        <input type="text" id="respuesta">
+        <form name="myForm">
+            <input class="ingresar" type="file" id="myInput" />
+            <div class="analizador"> 
+                <div class="hijo">
+        <table width="400" cellspacing="1" cellpadding="3" border="0" bgcolor="#1E679A"> 
+            <tr> 
+               <td><font color="#FFFFFF" face="arial, verdana, helvetica"> 
+            <b>Contenido del archivo:</b> 
+               </font></td> 
+            </tr> 
+            <tr> 
+               <td bgcolor="#dfe1ed"> 
+               <font face="arial, verdana, helvetica"> 
+                <pre id="contenido-archivo"></pre>
+               </font> 
+               </td> 
+            </tr> 
+            </table> 
+        </div>
+    </div>
+        
+        </form>
+        <article class="contenedor">
+            <h3>Palabras</h3>
+                <ul>
+                    <div class="historial" id="historial">
+                    
+                    </div>
+                </ul>
+            </article>
+            
+    
+        <script type="text/javascript" src="./analizador.js"></script>
+        <script type="text/javascript" src="./leer.js"></script>
+        <script type="text/javascript" src="./archivo.js"></script>
+
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="/prueba.js"></script>
+</body>
+
+</html>
